@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Samuel Beaulieu</title>
+    <meta name="description" content="UI/UX Developer for web & mobile applications">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            color-scheme: light dark;
+            --background: #fff;
+            --text: #000;
+            --link: rgba(0, 0, 0, .85);
+            --link-hover: rgba(0, 0, 0, .65);
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --background: #000;
+                --text: #fff;
+                --link: rgba(255, 255, 255, .85);
+                --link-hover: rgba(255, 255, 255, .65);
+            }
+        }
+        html, body {
+            font-family: sans-serif;
+            font-weight: 200;
+            font-size: 1em;
+            line-height: 1.618em;
+            color: var(--text);
+            margin: 0;
+            background: var(--background);
+        }
+        section.full-width {
+            max-width: 100%;
+            min-height: 100vh;
+            height: 100%;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .intro {
+            text-align: center;
+        }
+        .intro .title {
+            font-weight: 400;
+            font-size: 3.8em;
+            line-height: 1;
+            margin: 0 0 20px;
+            padding: 0;
+            letter-spacing: .15em;
+        }
+        .intro .subtitle {
+            font-size: 1.618em;
+            line-height: 1.618em;
+            opacity: .8;
+            letter-spacing: .5em;
+            margin: 0 0 20px;
+        }
+        .contact {
+            display: flex;
+            flex-flow: row wrap;
+            margin-top: 1.618em;
+            font-weight: 400;
+            font-size: 1.6em;
+            line-height: 1.618em;
+            padding: 0;
+            letter-spacing: .15em;
+            list-style: none;
+            margin: 0 1.618em;
+        }
+        .contact .link {
+            margin: 0 20px;
+            color: var(--link);
+        }
+        .contact .link:hover {
+            text-decoration: none;
+            color: var(--link-hover);
+        }
+        @media (max-width: 600px) {
+            .intro {
+                padding: 0 1em;
+            }
+            .contact {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main>
+            <article>
+                <section class="full-width">
+                    <div class="intro">
+                        <h1 class="title">Samuel Beaulieu</h1>
+                        <div class="subtitle">UI/UX Developer<br/>web & mobile applications</div>
+                    </div>
+                    <div class="contact">
+                        <a href="https://github.com/samuelbeaulieu" target="_blank" class="link title">github</a>
+                        <a href="https://www.linkedin.com/in/samuelbeaulieu/" target="_blank" class="link title">linkedin</a>
+                        <a href="mailto:contact@samuelbeaulieu.com" target="_blank" class="link title">email</a>
+                    </div>
+                </section>
+            </article>
+        </main>
+      </div>
+</body>
+</html>
